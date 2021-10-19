@@ -37,10 +37,10 @@ class VisiteurRapportController extends AbstractController
     
     
    /**
-    * Permet d'afficher le formulaire d'edition
+    * Permet de modifier le rapport de visite
     *
     *@Route("/rapports/{id}/edit" , name="rapports_edit")
-    * @Security ("is_granted('ROLE_USER') and user === rapport.getVisiteur()", message="le rapport n'est pas de vous ! vous ne pouvez pas le modifier")
+    * @Security ("is_granted('ROLE_USER') and user === rapport.getVisiteur() ", message="le rapport n'est pas de vous ! vous ne pouvez pas le modifier")
     * @param RapportVisite $rapport
     * @return Response
     */

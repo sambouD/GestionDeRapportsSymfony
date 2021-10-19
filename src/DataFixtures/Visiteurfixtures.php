@@ -45,12 +45,7 @@ class Visiteurfixtures extends Fixture
         $manager->persist($adminUser);
 
 
-        
-
-
-
-
-
+    
 
 
 
@@ -186,8 +181,6 @@ class Visiteurfixtures extends Fixture
     
         $manager->persist($offrir);
     }
-
-
 
 
 

@@ -9,7 +9,6 @@
     <table class="table table-hover">
         <thead id="pink">
             <tr>
-
                 <th>Id</th>
                 <th>Visiteur</th>
                 <th>Praticien</th> 
@@ -17,7 +16,6 @@
                 <th>Bilan</th>
                 <th>Motif</th>
                 <th>Action</th>
-                
             </tr>
         </thead>
         <tbody>
@@ -38,8 +36,6 @@
                     <a href="{{ path('rapports_delete', {'id' : rapport.id}) }}" class="btn btn-danger"
                     onclick="return confirm('Êtes vous sur de vouloir supprimer le rapport : {{rapport.Id}} ?')"
                     ><i class="fas fa-trash"></i></a>
-
-                
                 </td>
             </tr>
             {% endfor %}
